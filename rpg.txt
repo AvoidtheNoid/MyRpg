@@ -1,0 +1,57 @@
+Biomes:
+Snow
+Unless warm clothes - hp tick
+- movement
+
+Mountain
+-- movement
+
+Cove
+- movement
++ fortunate encounters
+
+Forest
++ monster fights
+
+Plains
++ sight (can see and avoid monsters early)
++ movement
+
+Desert
+- hp tick (water replenish or healing stuff)
+- movement
+
+
+Races:
+Human
+10 base, = growth
+Elf
++wisdom +intellegince
+Dwarf
+ +vitality +endurance
+Skeleton
+-base, - growth
+
+Classes:
+
+Warrior
++vitality + endurance + strength
+Mage
++ wisdom +Intellegince
+Rogue
++endurance ++agility
+
+Stats:
+
+Vitality
+HP
+Strength
+Physical Damage
+Endurance
+Stamina
+Agility
+Doge/Crit/Stealth rating
+Wisdom
+Mana
+Intellegince
+Magic Damage
