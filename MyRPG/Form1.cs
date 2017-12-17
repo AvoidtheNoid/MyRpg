@@ -7,22 +7,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Logic;
 
 namespace MyRPG
 {
     public partial class Game : Form
     {
+        private Player _player;
+
         public Game()
         {
             InitializeComponent();
-        }
 
-        private void Testbtn_Click(object sender, EventArgs e)
-        {
-            lblHP.Text = "100";
-            lblGold.Text = "10";
-            lblExp.Text = "0";
-            lblLevel.Text = "1";
+            _player = new Player();
+
+            _player.CurHitPoints = 100;
+            _player.MaxHitPoints = 999;
+            _player.Gold = 10;
+            _player.ExperiencePts = 0;
+            _player.Level = 1;
+
+            lblHP.Text = _player.CurHitPoints.ToString();
+            lblGold.Text = _player.Gold.ToString();
+            lblExp.Text = _player.ExperiencePts.ToString();
+            lblLevel.Text = _player.Level.ToString();
         }
     }
 }
