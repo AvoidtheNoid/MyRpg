@@ -6,17 +6,25 @@ using System.Threading.Tasks;
 
 namespace Logic
 {
-     public class Player
+    public class Player : Character
     {
-        public int CurHitPoints { get; set; }
-        public int MaxHitPoints { get; set; }
         public int Gold { get; set; }
         public int ExperiencePts { get; set; }
         public int Level { get; set; }
+        public List<Inventory> Inventory { get; set; }
+        public List<PlayerQuest> Quests { get; set; }
 
-        public Player()
+        
+        public Player(int maxHp, int curHP, int gold, int exp, int level) : base(maxHp, curHP)
         {
-            //set base values
+            Gold = gold;
+            ExperiencePts = exp;
+            Level = level;
+
+            Inventory = new List<Inventory>();
+            Quests = new List<PlayerQuest>();
+
         }
+
     }
 }
