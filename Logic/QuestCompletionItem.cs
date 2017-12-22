@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Logic
 {
-    public class QuestCompletion
+    public class QuestCompletionItem
     {
         public Item Details { get; set; }
         public int Quantity { get; set; }

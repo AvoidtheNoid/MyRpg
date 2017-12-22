@@ -19,7 +19,7 @@ namespace Logic
         public Location LocationToSouth { get; set; }
         public Location LocationToWest { get; set; }
 
-        public Location(int id, string name, string description, Item enteritem, Quest questhere, Enemy enemyhere)
+        public Location(int id, string name, string description, Item enteritem = null, Quest questhere = null, Enemy enemyhere = null)
         {
             ID = id;
             Name = name;

@@ -13,7 +13,8 @@ namespace Logic
         public string Description { get; set; }
         public int RewardExperiencePoints { get; set; }
         public int RewardGold { get; set; }
-        public List<QuestCompletion> QuestCompletion { get; set; }
+        public List<QuestCompletionItem> QuestCompletionItems { get; set; }
+        public Item RewardItem { get; set; }
 
         public Quest(int id, string name, string description, int expreward, int goldreward)
         {
@@ -22,7 +23,7 @@ namespace Logic
             Description = description;
             expreward = RewardExperiencePoints;
             goldreward = RewardGold;
-            QuestCompletion = new List<QuestCompletion>();
+            QuestCompletionItems = new List<QuestCompletionItem>();
         }
 
     }
