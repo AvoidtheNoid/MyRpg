@@ -12,6 +12,7 @@ namespace Logic
         public static readonly List<Enemy> Enemies = new List<Enemy>();
         public static readonly List<Quest> Quests = new List<Quest>();
         public static readonly List<Location> Locations = new List<Location>();
+        public static Player Player = new Player(100,100,10,0,1);
 
         public const int ITEM_ID_RUSTY_SWORD = 1;
         public const int ITEM_ID_RAT_TAIL = 2;
@@ -47,6 +48,7 @@ namespace Logic
             PopulateEnemies();
             PopulateQuests();
             PopulateLocations();
+            CreatePlayer();
         }
 
         private static void PopulateItems()
@@ -170,6 +172,22 @@ namespace Logic
             Locations.Add(farmersField);
             Locations.Add(bridge);
             Locations.Add(spiderField);
+        }
+
+        private static void CreatePlayer()
+        {
+            Player.Stats.HP = 100;
+            Player.Stats.MP = 100;
+            Player.Stats.PAtk = 10;
+            Player.Stats.MAtk = 10;
+            Player.Stats.PDef = 10;
+            Player.Stats.MDef = 10;
+            Player.Stats.Crit = 10;
+            Player.Stats.Dge = 10;
+            Player.Stats.Agi = 10;
+            Player.Stats.Wis = 10;
+            Player.Stats.Int = 10;
+            Player.Stats.Str = 10;
         }
 
         public static Item ItemByID(int id)

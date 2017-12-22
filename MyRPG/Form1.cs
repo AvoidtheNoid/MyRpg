@@ -49,6 +49,7 @@ namespace MyRPG
         {
             MoveTo(_player.CurrentLocation.LocationToWest);
         }
+
         private void MoveTo(Location newLocation)
         {
             //Does the location have any required items

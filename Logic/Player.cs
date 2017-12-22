@@ -14,7 +14,8 @@ namespace Logic
         public List<Inventory> Inventory { get; set; }
         public List<PlayerQuest> Quests { get; set; }
         public Location CurrentLocation { get; set; }
-        
+        public Stat Stats { get; set; }
+
         public Player(int maxHp, int curHP, int gold, int exp, int level) : base(maxHp, curHP)
         {
             Gold = gold;
